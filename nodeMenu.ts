@@ -248,7 +248,7 @@ export default function (mind: MindElixirInstance) {
     if (nodeObj.style) {
       if (nodeObj.style.fontSize) {
         menuContainer.querySelector(
-          '.size[data-size="' + nodeObj.style.fontSize + '"]'
+          '.size[data-size="' + parseInt(nodeObj.style.fontSize) + '"]'
         )!.className = 'size size-selected'
       }
       if (nodeObj.style.fontWeight) {
